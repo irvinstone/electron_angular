@@ -1,0 +1,16 @@
+<h2>Usbs conectados</h2>
+
+<ul class="heroes">
+    <li *ngFor="let usb of devices">
+      <!-- <a routerLink="/detail/{{usb.id}}"> -->
+        <span class="badge">{{usb.name}}</span> {{usb.name}}
+        <span class="badge">{{usb.name}}</span> {{usb.id}}
+      <!-- </a> -->
+    </li>
+  </ul>
+  <button (click)="loadDevices()">
+    <span>Cargar</span>
+</button>
+<button (click)="goBack()">
+    <span>Volver</span>
+</button>

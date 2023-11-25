@@ -1,0 +1,11 @@
+
+<ul>
+    <li *ngFor="let user of users">
+        <span></span> {{user.name}}
+    </li>
+  </ul>
+
+<button (click)="getUsers()">
+    <span>Get users</span>
+</button>
+
